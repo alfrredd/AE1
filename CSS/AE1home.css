@@ -1,0 +1,47 @@
+
+.contenedor{
+    border: 5px solid rgb(187, 92, 92);
+    padding: 5px;
+    width: auto;
+    display: flex; 
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    border: 5px double rgb(0, 0, 0);
+    margin: 5px;
+    flex-grow: 8;
+}
+nav{
+    text-align: center;
+    border: 3px dashed blue;
+    margin: 5px;
+    flex-grow: 3;
+}
+nav>a{
+    margin: 2% ;
+    color: black;
+    text-decoration:none;
+    background-color: aquamarine;
+}
+main{
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    flex-grow: 84;
+}
+section{
+    border: 5px solid rgb(87, 143, 19);
+    margin: 5px;
+    padding: 5px;
+}
+aside{
+    border: 5px solid rgb(120, 23, 137);
+    margin: 5px;
+    padding: 5px;
+}
+footer{
+    border: 5px solid rgb(204, 178, 12);
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 5;
+}
