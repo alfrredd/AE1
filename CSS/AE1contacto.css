@@ -1,1 +1,82 @@
-/*Estilos - Formulario de Contacto*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+@media screen and (min-width: 1300px){
+    header {
+        width:auto;
+    }
+
+    #formulario {
+        width:auto;
+    }
+
+    body{
+        background-color: #d63016;
+    }
+}
+@media screen and (min-width: 900px){
+    header {
+        width: 98%;
+    }
+
+    #formulario {
+        width: 98%;
+    }
+
+    body{
+        background-color: #4a529e;
+    }
+}
+header {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    background-color: rgb(174, 170, 170);
+    border-radius: 10px;
+}
+header h1 {
+    margin: 20px 0;
+    padding: 10px 0;
+    color: rgb(33, 33, 56);
+}
+header p {
+    font-size: 20px;
+    padding: 20px 0;
+}
+#index {
+    margin: 20px auto;
+    width: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#index ul {
+    list-style: none;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    background-color: rgb(33, 33, 46);
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    padding:  10px 15px;
+    display: flex;
+    
+}
+.nav li a:hover {
+    background-color: #282a43;
+}
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+.nav li:hover ul {
+    display: grid;
+}
+#formulario {
+    margin: 80px 10% 0 10%;
+}
+.campo {
+    margin: 10px 0 10px 10px;
+}

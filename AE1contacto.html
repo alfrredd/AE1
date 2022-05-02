@@ -3,11 +3,73 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>AE1contacto</title>
+    <link rel="icon" href="img/Formulario-de-contacto-icon.png">
+    <title>AE1 Formulario de contacto</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/AE1contacto.css">
 </head>
+<header>
+    <h1>Formulario de Contacto</h1>
+    <p>Rellene este formulario para ponerse en contacto con nosotros.</p>
+    <div id="index">
+        <ul class="nav">
+            <li>
+                <a href="#">Índice</a>
+                <ul>
+                    <li><a href="AE1home.html">Home</a></li>
+                    <li><a href="AE1areas.html">Áreas de actuación</a></li>
+                    <li><a href="AE1quienes.html">Quiénes somos</a></li>
+                    <li><a href="AE1contacto.html">Formulario de contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
 <body>
-    <p>Formulario de contacto</p>
+    <div id="formulario">
+        <form action="procesarFormulario" method="post">
+            <fieldset>
+                <legend>Formulario:</legend>
+                <div class="campo">
+                    <label for="nombre">*Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required autofocus>
+                </div>
+                <div class="campo">
+                    <label for="appelidos">*Apellidos:</label>
+                    <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <div class="campo">
+                    <label for="edad">Edad:</label>
+                    <input id="edad" type="number" name="edad" placeholder="18" min="1" max="200" step="10">
+                </div>
+                <div class="campo">
+                    <label for="numero_telefono">Número de teléfono:</label>
+                    <input id="numero_teelfono" type="tel" name="numero_telefono" placeholder="+34 000 00 00">
+                </div>
+                <div class="campo">
+                    <label for="email">*Correo electrónico:</label>
+                    <input id="email" type="email" name="email" placeholder="Ejemplo@hotmail.com" required>
+                </div>
+                <div class="campo">
+                    <label for="fecha">Fecha:</label>
+                    <input id="fecha" type="date" name="fecha">
+                </div>
+                <div class="campo">
+                    <label for="enlace">Enlace:</label>
+                    <input id="enlace" type="url" name="enlace" placeholder="www">
+                </div>
+                <div class="campo">
+                    <label for="color">Tinte:</label>
+                    <input id="color" type="color" name="color">
+                </div>
+                <div class="campo">
+                    <input type="submit" value="Enviar datos">
+                </div>
+                <div class="campo">
+                    <input type="reset" value="Resetear formulario">
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
