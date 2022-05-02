@@ -2,13 +2,11 @@ header{
     text-align: center;
     border: 5px double rgb(0, 0, 0);
     margin: 5px;
-    flex-grow: 8;
 }
 nav{
     text-align: center;
     border: 1px solid green;
     margin: 10px;
-    flex-grow: 3;
 }
 a{
     margin: 20px ;
@@ -21,7 +19,6 @@ h2{
     margin-left: 45%;
     margin-right: 45%;
     color: black;
-    text-decoration:none;
     text-align: center;
     background-color:  violet;
 }
@@ -30,11 +27,72 @@ h2{
     margin-right: 20%;
     
 }
-.carlos{
+/*Menú Desplegable*/
+#menu{
+    display: none;
+    margin: 5px;
+    grid-column: 1/3;
+    grid-row: 2;
+}
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  #menu > ul li {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+  }
+  
+  #menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #444;
+  }
+  
+  #menu li:hover a,
+  #menu li a:focus {
+    background: #4b3b8f;
+    color: #fff;
+  }
+  
+  #menu li ul {
     position: absolute;
+    width: 0;
+    overflow: hidden;
+  }
+  
+  #menu li:hover ul,
+  #menu li:focus ul {
+    width: 100%;
+    margin: 0 -4rem -4rem -4rem;
+    padding: 0 4rem 4rem 4rem;
+    z-index: 5;
+  }
+  
+  #menu li li {
+    display: block;
+    width: 100%;
+  }
+  
+  #menu li:hover li a,
+  #menu li:focus li a {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  #menu li li a:hover,
+  #menu li li a:focus {
+    background: #8AA9B8;
+  }
+  /* Fin Menú Desplegable*/
+.carlos{
+    position: relative;
     text-align: center;
     border: 2px solid grey;
-    flex-grow: 3;
     border-radius: 20px;
     top: 40%;
     left: 30%;
@@ -42,10 +100,9 @@ h2{
     width: 160px;
 }
 .david{
-    position: absolute;
+    position: relative;
     text-align: center;
     border: 2px solid grey;
-    flex-grow: 3;
     border-radius: 20px;
     top: 40%;
     left: 40%;
@@ -53,10 +110,9 @@ h2{
     width: 160px;
 }
 .alfredo{
-    position: absolute;
+    position: relative;
     text-align: center;
     border: 2px solid grey;
-    flex-grow: 3;
     border-radius: 20px;
     top: 40%;
     left: 50%;
@@ -64,10 +120,9 @@ h2{
     width: 160px;
 }
 .iñigo{
-    position: absolute;
+    position: relative;
     text-align: center;
     border: 2px solid grey;
-    flex-grow: 3;
     border-radius: 20px;
     top: 40%;
     left: 60%;
@@ -75,6 +130,14 @@ h2{
     width: 160px;
 }
 
+@media screen and (max-width: 800px){
+    nav{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+}
 
 @media screen and (min-width: 1300px)  and (max-width: 1650px) {
     body{
